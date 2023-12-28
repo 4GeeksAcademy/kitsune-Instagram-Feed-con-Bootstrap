@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+
+      <a class="navbar-brand d-flex align-items-center mb-3 me-auto" href="#">
+        <i class="fa-brands fa-instagram "></i>
+        Intagram
+      </a>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Caption:
+              <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
+              </div>
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i
+                  class="fa-solid fa-camera"></i></button>
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i
+                  class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dropdown -->
+      <div class="dropdown ps-5 pe-5">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+      <nav>
+  </div>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs justify-content-center mb-3" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#parrilla" type="button" role="tab" aria-controls="parrilla" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg"
+      width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+      <path
+        d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z" />
+    </svg></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hilera" type="button" role="tab" aria-controls="hilera" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+    </svg></button>
+  </li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content"> <!--PARRILLA-->
+  <div class="tab-pane active" id="parrilla" role="tabpanel" aria-labelledby="home-tab">
+    <div class="card-group px-2" style="height: 400px;"><!--CARD GROUP 1-->
+      <div class="card border-0" >
+        <img src="images/ajedrez1.jpg" class="card-img  px-2 py-2" style="height: 450px; object-fit: cover" alt="ajedrez">
+      </div>
+      <div class="card border-0">
+        <img src="images/colores1.jpg" class="card-img  px-2 py-2" style="object-fit: cover" alt="colores">
+      </div>
+      <div class="card border-0">
+        <img src="images/flor1.jpg" class="card-img  px-2 py-2" style="object-fit: cover" alt="flor">
+      </div>
+    </div>
+
+    <div class="card-group px-2" style="height: 400px;"><!--CARD GROUP 2-->
+      <div class="card border-0">
+        <img src="images/mano1.jpg" class="card-img  px-2 py-2" style="object-fit: cover" alt="mano">
+      </div>
+      <div class="card border-0">
+        <img src="images/maquillaje1.jpg" class="card-img  px-2 py-2" style="object-fit: cover" alt="maquillaje">
+      </div>
+      <div class="card border-0">
+        <img src="images/roma1.jpg" class="card-img px-2 py-2" style="height: 450px; object-fit: cover" alt="roma">
+      </div>
+    </div>
+
+    <div class="card-group px-2"><!--CARD GROUP 3-->
+      <div class="card border-0">
+        <img src="images/Work1.jpg" class="card-img px-2 py-2" style="height: 450px; object-fit: cover" alt=" Work">
+      </div>
+      <div class="card border-0">
+        <img src="images/Breakfast1.jpg" class="card-img px-2 py-2" style="height: 450px; object-fit: cover" alt="Breakfast">
+      </div>
+      <div class="card border-0">
+         <img src="images/Holiday1.jpg" class="card-img px-2 py-2" style="height: 450px; object-fit: cover" alt="Holiday">
+      </div>
+    </div>
+
+
+  </div><!--FINAL PARRILLA-->
+
+
+
+<!--INICIO HILERA-->
+<div class="tab-pane" id="hilera" role="tabpanel" aria-labelledby="profile-tab">    <div id="hilera"></div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Fitgh now!</div>
+              <div class="col fs-6 text text-end">05/26</div>
+            </div>
+    
+            <img src="images/ajedrez1.jpg" class="card-img" alt="ajedrez">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">204 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Galaxy</div>
+              <div class="col fs-6 text text-end">06/15</div>
+            </div>
+    
+            <img src="images/colores1.jpg" class="card-img" alt="colores">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">352 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Sadness in the wild</div>
+              <div class="col fs-6 text text-end">07/30</div>
+            </div>
+    
+            <img src="images/flor1.jpg" class="card-img" alt="flor">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">147 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Security</div>
+              <div class="col fs-6 text text-end">08/04</div>
+            </div>
+    
+            <img src="images/mano1.jpg" class="card-img " alt="mano">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">54 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Blue</div>
+              <div class="col fs-6 text text-end">10/25</div>
+            </div>
+    
+            <img src="images/maquillaje1.jpg" class="card-img" alt="maquillaje">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">452 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Geometrics in the sky</div>
+              <div class="col fs-6 text text-end">11/05</div>
+            </div>
+    
+            <img src="images/roma1.jpg" class="card-img" alt="roma">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">148 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Relax time</div>
+              <div class="col fs-6 text text-end">07/10</div>
+            </div>
+    
+            <img src="images/Holiday1.jpg" class="card-img" alt="Holiday">
+            <div class="card-body text-start overflow-auto">
+              <p class="card-text fw-bold mb-1">221 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Yummy Yummy</div>
+              <div class="col fs-6 text text-end">12/11</div>
+            </div>
+    
+            <img src="images/Breakfast1.jpg" class="card-img" alt="Breakfast">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">34 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="row mx-2">
+              <div class="col card-title text-start fs-3 text fw-bold">Go! you can!</div>
+              <div class="col fs-6 text text-end">25/12</div>
+            </div>
+    
+            <img src="images/Work1.jpg" class="card-img" alt="Holiday">
+            <div class="card-body text-start">
+              <p class="card-text fw-bold mb-1">362 likes</p>
+              <p class="card-text pb-2">This is an example of a very good photo that you can post on instragram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--FINAL HILERA-->
+
+
+    </div>
+
+    <div class="col-2"></div>
+  </div>
+</div>
+
+  
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
